@@ -62,7 +62,7 @@ const App = () => {
       if (data.length >= 2) {
         const [p1, p2] = data;
         const angleOffset = -Math.atan2(p2.y - p1.y, p2.x - p1.x) * (180 / Math.PI);
-        const transformedData = data.map(({ distance, angle, x, y }) => {
+        const transformedData = data.map(({ distance, angle }) => {
           const adjustedAngle = angle + angleOffset;
           const { x: newX, y: newY } = polarToCartesian(distance, adjustedAngle);
           return { distance, angle: adjustedAngle, x: newX, y: newY };

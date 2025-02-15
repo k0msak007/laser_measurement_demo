@@ -71,12 +71,14 @@ export const InputSection: React.FC<InputSectionProps> = ({
       <div className="card">
         <div className="card-body">
           <h2 className="text-lg font-semibold text-gray-900 mb-4">Visual Preview</h2>
-          <Canvas
-            width={width}
-            height={height}
-            data={data}
-            scale={scale}
-          />
+          <div className="w-full overflow-hidden">
+            <Canvas
+              width={width}
+              height={height}
+              data={data}
+              scale={scale}
+            />
+          </div>
         </div>
       </div>
     </div>

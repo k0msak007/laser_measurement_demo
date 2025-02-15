@@ -17,9 +17,11 @@ export const Canvas: React.FC<CanvasProps> = ({ width, height, data, scale }) =>
 
   return (
     <svg
-      width={width}
-      height={height}
+      viewBox={`0 0 ${width} ${height}`}
+      width="100%"
+      height="100%"
       className="border border-gray-300 rounded-lg shadow-inner bg-white"
+      style={{ maxWidth: '100%', height: 'auto' }}
     >
       <line x1={centerX} y1={0} x2={centerX} y2={height} stroke="#CBD5E1" strokeDasharray="4" />
       <line x1={0} y1={centerY} x2={width} y2={centerY} stroke="#CBD5E1" strokeDasharray="4" />
