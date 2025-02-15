@@ -1,5 +1,7 @@
 {
   "name": "laser_measurement_demo",
+  "private": true,
+  "homepage": "https://k0msak007.github.io/laser_measurement_demo/",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
